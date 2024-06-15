@@ -1,0 +1,36 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .weather-display {
+    margin-top: 20px;
+    
+  }
+  .details-container{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .search-bar {
+    margin: 20px 0;
+  }
+  
+  .dark-mode-toggle {
+    margin-bottom: 20px;
+  }
+  
+  .cloudy-image{
+    height:80px;
+    width:80px;
+  }
