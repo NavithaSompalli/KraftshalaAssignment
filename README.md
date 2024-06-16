@@ -68,3 +68,114 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+# Weather Application
+
+A weather application built with React that fetches weather data from the OpenWeatherMap API. This application supports dark mode and allows users to search for weather data by city.
+
+## Features
+
+- Fetches current weather data based on user's location.
+- Allows users to search for weather data by city.
+- Dark mode toggle.
+- Displays multiple weather data entries.
+
+## Installation
+
+1. **Clone the repository:**
+
+
+    git clone https://github.com/NavithaSompalli/KraftshalaAssignment.git
+    
+
+
+2. **Install dependencies:**
+
+    
+    npm install
+    
+
+3.  project and adding OpenWeatherMap API key:**
+
+    
+    REACT_APP_WEATHER_API_KEY=78f1b9448d3227cc20ba6817f0a6a813
+    ```
+
+4. **Run the development server:**
+
+    ```sh
+    npm start
+    ```
+
+    The app will be available at `http://localhost:3000`.
+
+## Usage
+
+1. When the app loads, it will fetch and display weather data for the user's current location.
+2. Use the search bar to search for weather data by city.
+3. Use the dark mode toggle to switch between light and dark modes.
+
+## File Structure
+
+- `src/App.js`: Main component that handles fetching weather data and rendering other components.
+- `src/components/WeatherDisplay/WeatherDisplay.js`: Component to display weather data.
+- `src/components/SearchBar/SearchBar.js`: Component to handle city search.
+- `src/components/DarkModeToggle/DarkModeToggle.js`: Component to toggle dark mode.
+- `src/App.css`: Styles for the application.
+
+## Deployment
+
+### Deploying to GitHub Pages
+
+1. **Install `gh-pages` package:**
+
+    ```sh
+    npm install gh-pages --save-dev
+    ```
+
+2. **Update `package.json`:**
+
+    Add a `homepage` field and `predeploy`/`deploy` scripts:
+
+    ```json
+    "homepage": "https://github.com/NavithaSompalli/KraftshalaAssignment.git",
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    }
+    ```
+
+3. **Deploy:**
+
+    ```sh
+    npm run deploy
+    ```
+
+### Deploying to Netlify
+
+1. **Build your app:**
+
+    ```sh
+    npm run build
+    ```
+
+2. **Sign up and log in to Netlify.**
+
+3. **Drag and drop the `build` folder into the Netlify dashboard.**
+
+
+
+## Acknowledgements
+
+- [OpenWeatherMap API](https://openweathermap.org/api)
+- [React](https://reactjs.org/)
+- [Axios](https://github.com/axios/axios)
+
+
+### 'Published link ##### 
+https://main--dashing-mermaid-230253.netlify.app/

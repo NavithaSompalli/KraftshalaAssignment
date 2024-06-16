@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import './index.css'
 
 const WeatherDisplay = ({ weatherData }) => {
@@ -13,6 +14,8 @@ const WeatherDisplay = ({ weatherData }) => {
           <p>Weather: {data.weather[0].description}</p>
           <p>Humidity: {data.main.humidity}%</p>
           <p>Wind Speed: {data.wind.speed} m/s</p>
+          <p>Date and Time: {moment().format('MMMM Do YYYY, h:mm:ss a')}</p>
+      
           
         </div>
       ))}

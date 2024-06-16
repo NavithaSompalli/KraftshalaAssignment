@@ -10,7 +10,7 @@ const SearchBar = ({ city, setCity, fetchWeather }) => {
         onChange={(e) => setCity(e.target.value)}
         placeholder="Enter city name or zipcode"
       />
-      <button onClick={fetchWeather}>Get Weather</button>
+      <button onClick={fetchWeather}>Get Weather report</button>
     </div>
   );
 };
